@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres</title>
+    <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres | Home Page">
+    <meta name="author" content="Pedro Igor Andrade Neres">
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 | Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a></li>
+                <a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a></li>
+                <a href="final-project/index.html" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pedro Igor Andrade Neres</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="About me profile picture">
+            <p>My name is Pedro Igor, I´m from Brazil and i am an aspiring programmer who loves video games, im currently taking on the
+            Introduction to Programming course on BYU Pathway.</p>
+        </section>
+        <section class="card">
+            <h2>Rio de Janeiro, Brazil</h2>
+            <img src="images/rio.jpg" alt="Rio de Janeiro">
+            <p>While Brazil can be a little rough around the edges, there is still beauty to be found, some of the best beaches in the
+            world, and of course, delicious food.</p>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> Pedro Igor Andrade Neres, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Populate the current year dynamically
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        // Display the document's last modified date
+        document.getElementById('lastModified').textContent =
+            'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+</html>
