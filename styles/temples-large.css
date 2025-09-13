@@ -1,0 +1,57 @@
+@media (min-width: 37.5em) {
+    
+    header {
+        display: flex;
+        max-height: 3.3rem;
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        font-size: 1.3rem;
+        margin-top: -1.4rem;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main h1 {
+        grid-column: 1/4;
+        width: 100%;
+    }
+
+    img {
+        max-width: 245px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 850px){
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main h1 {
+        grid-column: 1/3;
+    }
+
+   
+
+}
