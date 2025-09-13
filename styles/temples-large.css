@@ -6,10 +6,12 @@
         margin-bottom: 30px;
     }
     
-    h1 {
+    h2 {
         font-size: 2.5rem;
         margin-left: 0;
         text-align: center;
+        grid-column: 1/4;
+        width: 100%;
     }
     #menu {
         display: none;
@@ -30,12 +32,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 800px;
     }
-
-    h2 {
-        grid-column: 1/4;
-        width: 100%;
-    }
-
     img {
         max-width: 245px;
     }
