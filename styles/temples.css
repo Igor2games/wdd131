@@ -19,12 +19,12 @@ header {
     background-color: var(--primary-color);
 }
 
-header h1 {
+h1 {
     text-align: left;
     margin-left: 1rem;
     font-size: 1.5rem;
     color: white;
-    padding-top: 0.5rem;
+    padding-top: 0.9rem;
 }
 
 nav {
@@ -45,6 +45,7 @@ nav a:hover {
 #menu::before {
     content: "☰";
     color: white;
+    font-size: 2rem;
 }
 
 #menu.open::before {
