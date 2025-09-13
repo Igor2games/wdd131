@@ -28,6 +28,7 @@
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 800px;
     }
 
     h2 {
@@ -38,19 +39,20 @@
     img {
         max-width: 245px;
     }
-
 }
 
 @media (min-width: 600px) and (max-width: 850px){
 
     main {
         grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 570px;
+            /* ← fixed width for 2 columns + gap */
+            margin: 0 auto;
+            /* ← centers the grid */
     }
 
     h2 {
         grid-column: 1/3;
     }
-
-   
-
 }
