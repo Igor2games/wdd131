@@ -3,14 +3,54 @@
 
 <head>
     <script src="scripts/getdates.js" defer></script>
-    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres</title>
-    <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres | Home Page">
+    <title>Country Page</title>
+    <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres | Country Page">
     <meta name="author" content="Pedro Igor Andrade Neres">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
+<body>
+    <header>
+        <h1>Brazil<h1>
+    </header>
+    <main>
+        <section class="menu">
+            <img src="images/christ-redeemer.jpg" alt="About me profile picture">
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 8,515,767 km²</li>
+                    <li><strong>Population:</strong> 211.9 million (2025 estimate)</li>
+                    <li><strong>Capital:</strong> Brasília</li>
+                    <li><strong>Language:</strong> Portuguese</li>
+                    <li><strong>Currency:</strong> Real (BRL)</li>
+                    <li><strong>Time Zone:</strong> UTC−03:00 (most regions)</li>
+                    <li><strong>Calling Code:</strong> +55</li>
+                    <li><strong>Internet TLD:</strong> .br</li>
+                </ul>
+            </div>
+            <div class="weather-data">
+                <h2>Weather</h2>
+                <ul>
+                    <li><span class="label">Temperature:</span> <span class="value">26°C</span></li>
+                    <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+                    <li><span class="label">Wind:</span> <span class="value">15 km/h</span></li>
+                    <li><span class="label">Wind Chill:</span> <span class="value" id="windChill">Calculating...</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> Pedro Igor Andrade Neres, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
