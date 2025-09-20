@@ -1,7 +1,15 @@
-@media (min-width: 500px){
+@media (min-width: 1500px){
+    body {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
     picture {
-        width: 100%;
-        height: 100%;
+        padding-right: 400px;
+    }
+}
+
+@media (min-width: 600px){
+    picture {
         position: absolute;
         z-index: -1;
     }
@@ -16,6 +24,7 @@
         grid-column: 1/2;
         grid-row: 1/2;
         margin: 1.5rem;
+        width: 16rem;
     }
 
     .weather {
@@ -33,10 +42,12 @@
         grid-row: 1/2;
     }
 
-    .weather img {
+    .emoji-icon {
         position: absolute;
-        right: 1.7rem;
-        top: 0.7rem;
+        display: inline-block;
+        bottom: 9.8rem;
+        left: 3rem;
+        font-size: 34px;
     }
 
     .weather ul{
@@ -65,5 +76,7 @@
         text-align: left;
         color: rgb(217, 214, 214);
     }
-
+    .svg-icon {
+        display: none;
+    }
 }

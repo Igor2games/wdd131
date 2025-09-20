@@ -55,7 +55,7 @@ li {
     margin-top: 0.7rem;
 }
 
-.weather img{
+svg{
     width: 30%;
     height: 30%;
     border-bottom: 0px;
@@ -68,4 +68,21 @@ footer {
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
     margin-top: 1rem;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.label::after {
+    content: ":";
+    margin-right: 4px;
+}
+
+.emoji-icon {
+    display: none;
+}
+
+.svg-icon {
+    display: inline-block;
 }
