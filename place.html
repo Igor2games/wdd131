@@ -4,6 +4,7 @@
 <head>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place-large.css">
     <link rel="stylesheet" href="styles/place.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,10 @@
     </header>
     <main>
         <section class="menu">
-            <img src="images/christ-redeemer.webp" alt="Christ redeemer">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/christ-redeemer-large.webp">
+                <img src="images/christ-redeemer.webp" alt="Christ redeemer">
+            </picture>
             <div class="data">
                 <h2>Data</h2>
                 <ul>
