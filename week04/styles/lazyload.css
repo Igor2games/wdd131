@@ -1,0 +1,24 @@
+h1 {
+    margin: 10 auto;
+    text-align: center;
+    background-color: rgb(74, 0, 0);
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 50px;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% {
+         opacity: 0;
+    }
+   
+}
