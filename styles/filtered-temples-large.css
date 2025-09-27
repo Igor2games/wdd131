@@ -22,6 +22,7 @@
         font-size: 1.3rem;
         margin-top: -1.1rem;
         background-color: transparent;
+        justify-content: flex-end;
     }
 
     .navigation a {
@@ -42,6 +43,11 @@
         width: 340px;
         height: 410px;
     }
+
+    nav {
+        margin-right: 150px;
+    }
+
 }
 
 @media (min-width: 600px) and (max-width: 850px){

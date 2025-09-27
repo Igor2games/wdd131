@@ -91,6 +91,8 @@ createTempleCard(temples);
 const homeLink = document.querySelector("#home");
 const oldLink = document.querySelector("#old");
 const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
 
 homeLink.addEventListener("click", () => {
     createTempleCard(temples);
@@ -111,7 +113,23 @@ newLink.addEventListener("click", () => {
         return year > 2000;
     });
 
-    createTempleCard(oldTemples);   // pass the array, not individual items
+    createTempleCard(oldTemples);
+});
+
+largeLink.addEventListener("click", () => {
+    const largeTemples = temples.filter(t => {
+        return t.area > 90000;
+    });
+
+    createTempleCard(largeTemples);
+});
+
+smallLink.addEventListener("click", () => {
+    const smallTemples = temples.filter(t => {
+        return t.area < 10000;
+    });
+
+    createTempleCard(smallTemples);
 });
 
 function createTempleCard(filteredTemples)
