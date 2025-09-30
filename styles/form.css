@@ -35,7 +35,8 @@ main {
 
 .form input[type ="text"],
 .form input[type="date"],
-.form select {
+.form select,
+.form input[type="textarea"] {
     background-color: #eee;
     display: block;
     border: 1px solid black;
