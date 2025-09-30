@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
@@ -11,3 +13,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get">
+            <label>Product Name
+            <select name="product" id="product" required>
+            <option value="selectProduct" disabled="disabled" selected>Select a Product ...</option>
+            </select>
+            </label>
+            
+            <div>Overall Rating
+            <label>☆<input type="radio" name="rating" id="☆" required></label>
+            <label>☆☆<input type="radio" name="rating" id="☆☆" required></label>
+            <label>☆☆☆<input type="radio" name="rating" id="☆☆☆" required></label>
+            <label>☆☆☆☆<input type="radio" name="rating" id="☆☆☆☆" required></label>
+            <label>☆☆☆☆☆<input type="radio" name="rating" id="☆☆☆☆☆" required></label>
+            </div>
+
+            <label>Date of Installation
+                <input type="date" name="date" id="date">
+            </label>
+
+            <div>Which features did you find most useful in the product
+                <p>(Check all that apply)</p>
+                <label>Durability<input type="checkbox" name="feature" id="durability"></label>
+                <label>Ease of Use<input type="checkbox" name="feature" id="easyOfUse"></label>
+                <label>Performance<input type="checkbox" name="feature" id="performance"></label>
+                <label>Design<input type="checkbox" name="feature" id="design"></label>
+            </div>
+
+            <label>Written Review (Optional) <input type="text" name="review" id="review"></label>
+
+            <label>Your Name (Optional) <input type="text" name="name" id="name"></label>
+
+            <input type="submit" value="Send Review">
+        </form>
+    </main>
+</body>
+</html>
