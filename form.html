@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script src="scripts/getdates.js" defer></script>
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres</title>
@@ -14,21 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header></header>
+    <h1>Product Review</h1>
+    </header>
     <main>
-        <h1>Product Review</h1>
-        <form action="review.html" method="get">
+        <form action="review.html" method="get" class="form">
             <label>Product Name
             <select name="product" id="product" required>
             <option value="selectProduct" disabled="disabled" selected>Select a Product ...</option>
             </select>
             </label>
-            
-            <div>Overall Rating
-            <label>☆<input type="radio" name="rating" id="☆" required></label>
-            <label>☆☆<input type="radio" name="rating" id="☆☆" required></label>
-            <label>☆☆☆<input type="radio" name="rating" id="☆☆☆" required></label>
-            <label>☆☆☆☆<input type="radio" name="rating" id="☆☆☆☆" required></label>
-            <label>☆☆☆☆☆<input type="radio" name="rating" id="☆☆☆☆☆" required></label>
+            <p>Overall Rating</p>
+            <div class="review">
+            <label class="radio-item"><input type="radio" name="rating" id="☆" required>☆</label>
+            <label class="radio-item"><input type="radio" name="rating" id="☆☆" required>☆☆</label>
+            <label class="radio-item"><input type="radio" name="rating" id="☆☆☆" required>☆☆☆</label>
+            <label class="radio-item"><input type="radio" name="rating" id="☆☆☆☆" required>☆☆☆☆</label>
+            <label class="radio-item"><input type="radio" name="rating" id="☆☆☆☆☆" required>☆☆☆☆☆</label>
             </div>
 
             <label>Date of Installation
@@ -37,10 +39,10 @@
 
             <div>Which features did you find most useful in the product
                 <p>(Check all that apply)</p>
-                <label>Durability<input type="checkbox" name="feature" id="durability"></label>
-                <label>Ease of Use<input type="checkbox" name="feature" id="easyOfUse"></label>
-                <label>Performance<input type="checkbox" name="feature" id="performance"></label>
-                <label>Design<input type="checkbox" name="feature" id="design"></label>
+                <label><input type="checkbox" name="feature" id="durability">Durability</label>
+                <label><input type="checkbox" name="feature" id="easyOfUse">Ease of Use</label>
+                <label><input type="checkbox" name="feature" id="performance">Performance</label>
+                <label><input type="checkbox" name="feature" id="design">Design</label>
             </div>
 
             <label>Written Review (Optional) <input type="text" name="review" id="review"></label>
@@ -51,4 +53,8 @@
         </form>
     </main>
 </body>
+<footer>
+    <p> &copy; <span id="currentyear"></span> Pedro Igor Andrade Neres, Brasil</p>
+    <p id="lastModified"></p>
+</footer>
 </html>
