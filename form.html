@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <link rel="stylesheet" href="styles/form.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres</title>
-    <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres | Home Page">
+    <title>Product Review</title>
+    <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres | Product Review Form">
     <meta name="author" content="Pedro Igor Andrade Neres">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +38,7 @@
                 <input type="date" name="date" id="date">
             </label>
 
-            <div>Which features did you find most useful in the product
+            <div>Which features did you find most useful in the product?
                 <p>(Check all that apply)</p>
                 <label><input type="checkbox" name="feature" id="durability">Durability</label>
                 <label><input type="checkbox" name="feature" id="easyOfUse">Ease of Use</label>
@@ -45,9 +46,9 @@
                 <label><input type="checkbox" name="feature" id="design">Design</label>
             </div>
 
-            <label>Written Review (Optional) <input type="textarea" name="review" id="review"></label>
+            <label>Written Review <span class="optional">(Optional)</span><input type="textarea" name="review" id="review"></label>
 
-            <label>Your Name (Optional) <input type="text" name="name" id="name"></label>
+            <label>Your Name <span class="optional">(Optional)</span> <input type="text" name="name" id="name"></label>
 
             <input type="submit" value="Send Review">
         </form>
