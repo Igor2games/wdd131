@@ -79,10 +79,14 @@ footer{
     text-align: center;
 }
 
-p{
+.check {
     margin-top: 0px;
     margin-bottom: 2px;
     font-style: italic;
+}
+
+.rating{
+    margin-bottom: -15px;
 }
 
 
