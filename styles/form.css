@@ -43,7 +43,7 @@ main {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 400px;
+    max-width: 336px;
 }
 
 .form select {
@@ -52,7 +52,7 @@ main {
 
 .review {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .form div label {
@@ -65,8 +65,8 @@ main {
     background-image: linear-gradient(rgb(167, 4, 4), rgb(112, 0, 0));
     color: white;
     padding: .8rem;
-    width: 96.5%;
-    max-width: 430px;
+    width: 100%;
+    max-width: 325rem;
     margin-top: 1rem;
     padding-left: 1rem;
 }
@@ -101,6 +101,19 @@ footer{
    }
     .form input[type="submit"]{
         margin-left: 9px;
+        max-width: 25.5rem;
+        width: 96.5%;
     }
 
+    .form input[type="text"],
+    .form input[type="date"],
+    .form select,
+    .form input[type="textarea"] {
+
+        max-width: 400px;
+    }
+    .review {
+        display: flex;
+        gap: 1.5rem;
+    }
 }
