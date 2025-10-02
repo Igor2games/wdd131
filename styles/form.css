@@ -50,26 +50,23 @@ main {
     max-width: 425px;
 }
 
-.form input[type="radio"],
-.form input[type="checkbox"] {
-    padding: 10px;
-}
- 
 .review {
     display: flex;
     gap: 1.5rem;
 }
 
-.radio-item {
-    margin-top: -10px;
+.form div label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .form input[type="submit"] {
     background-image: linear-gradient(rgb(167, 4, 4), rgb(112, 0, 0));
     color: white;
     padding: .8rem;
-    width: 96%;
-    max-width: 425px;
+    width: 96.5%;
+    max-width: 430px;
     margin-top: 1rem;
     padding-left: 1rem;
 }
