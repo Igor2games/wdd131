@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="scripts/cretaceous.js" defer></script>
+    <link rel="stylesheet" href="styles/cretaceous.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cretaceous Universe</title>
+    <meta name="description"
+        content="WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres | Temple Picture Album">
+    <meta name="author" content="Pedro Igor Andrade Neres">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="home.html" class="logo-link" aria-label="Home">
+            <img src="assets/images/logo.svg" alt="Cretaceous Universe Logo" class="logo" width="56" height="56" />
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="dinosaurs.html" class="nav-link">Dinosaurs</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dinosaurs.html">Dinosaurs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-intro">
+            <h1>About Fossil United</h1>
+            <p>
+                Fossil United is dedicated to merging the thrill of scientific discovery with unforgettable prehistoric
+                adventure.
+                Our mission is to inspire curiosity about Earth’s past and make the dream of seeing real dinosaurs a
+                reality!
+            </p>
+        </section>
+
+        <section class="about-story">
+            <h2>How We Brought Dinosaurs Back</h2>
+            <p>
+                Through groundbreaking developments in genetic engineering, our team recovered and reconstructed viable
+                dinosaur DNA from ancient mosquito fossils.
+                With passion, expertise, and a relentless drive for safe innovation, Fossil United’s paleobiologists
+                achieved the impossible: the first living dinosaurs in 65 million years.
+                Cretaceous Universe is the world’s only park where science meets adventure—walk among giants, safely and
+                responsibly.
+            </p>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Meet Our Team</h2>
+            <div class="gallery-grid" id="workerGallery">
+                <figure>
+                    <img src="assets/images/worker1.jpg" alt="Dr. Ada Whittaker, Chief Paleogeneticist" width="350"
+                        height="280" class="worker-thumb" loading="lazy" data-full="assets/images/worker1.jpg"
+                        tabindex="0" />
+                    <figcaption>Dr. Ada Whittaker<br><span class="gallery-role">Chief Paleogeneticist</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/worker2.jpg" alt="Dr. Jae Park, Lead Dinosaur Veterinarian" width="350"
+                        height="280" class="worker-thumb" loading="lazy" data-full="assets/images/worker2.jpg"
+                        tabindex="0" />
+                    <figcaption>Dr. Jae Park<br><span class="gallery-role">Lead Dinosaur Veterinarian</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/worker3.jpg" alt="Chief Rowena Tani, Security and Safety" width="350"
+                        height="280" class="worker-thumb" loading="lazy" data-full="assets/images/worker3.jpg"
+                        tabindex="0" />
+                    <figcaption>Chief Rowena Tani<br><span class="gallery-role">Security &amp; Safety</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Lightbox Modal -->
+            <div class="lightbox-overlay" id="lightboxOverlay" tabindex="-1" aria-modal="true" role="dialog"
+                aria-label="Worker Photo Viewer">
+                <div class="lightbox-content" id="lightboxContent">
+                    <button class="lightbox-close" id="lightboxClose" aria-label="Close modal">&times;</button>
+                    <img src="" alt="" id="lightboxImg" />
+                    <span class="lightbox-caption" id="lightboxCaption"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>&copy; 2025 Cretaceous Universe by Fossil United</span>
+        <a href="reference.html" class="reference-link">References</a>
+    </footer>
+</body>
+
+</html>
