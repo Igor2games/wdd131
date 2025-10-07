@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="scripts/cretaceous.js" defer></script>
+    <link rel="stylesheet" href="styles/cretaceous.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cretaceous Universe</title>
+    <meta name="description"
+        content="WDD 131 | Dynamic Web Fundamentals | Pedro Igor Andrade Neres | Temple Picture Album">
+    <meta name="author" content="Pedro Igor Andrade Neres">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="home.html" class="logo-link" aria-label="Home">
+            <img src="images/logo.webp" alt="Cretaceous Universe Logo" class="logo"/>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="home.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="dinosaurs.html" class="nav-link">Dinosaurs</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+        <!-- Mobile Drawer -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dinosaurs.html">Dinosaurs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp"
+                alt="A panoramic view of Cretaceous Universe park with dinosaurs and lush ferns" width="1200"
+                height="490" class="hero-img" loading="eager" />
+            <div class="hero-content">
+                <h1>Welcome to <span class="highlight">Cretaceous Universe</span>!</h1>
+                <p>Your prehistoric adventure begins here. Roam amongst giants, experience the thrill of discovery, and
+                    witness the return of the dinosaurs by Fossil United’s world-class team!</p>
+                <div class="nav-actions">
+                    <a href="about.html" class="cta-btn">About Us</a>
+                    <a href="dinosaurs.html" class="cta-btn btn-outline">Meet the Dinosaurs</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join Our Paleo Newsletter</h2>
+            <p>Stay updated on park news, upcoming events, and dinosaur spotlights! Sign up today and don’t miss a roar.
+            </p>
+            <form class="newsletter-form" id="newsletterForm" autocomplete="off" novalidate>
+                <label for="newsletter-email" class="sr-only">Email address</label>
+                <div class="newsletter-input-row">
+                    <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required
+                        aria-required="true" aria-label="Email address" />
+                    <button type="submit" class="newsletter-submit"
+                        aria-label="Subscribe to newsletter">Subscribe</button>
+                </div>
+                <div class="form-feedback" id="newsletterFeedback" role="alert" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>&copy; 2025 Cretaceous Universe by Fossil United</span>
+        <a href="reference.html" class="reference-link">References</a>
+    </footer>
+</body>
+
+</html>
