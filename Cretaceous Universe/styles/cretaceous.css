@@ -494,6 +494,7 @@ header.header {
     text-align: center;
     margin-top: 2em;
     padding: 1em 2vw;
+    color: var(--primary-color);
 }
 
 .dinosaurs-header h1 {

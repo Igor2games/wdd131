@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 name: "Triceratops",
                 size: "9 m",
                 diet: "Herbivore",
-                img: "assets/images/dino-triceratops.jpg"
+                img: "images/dino-trike.webp"
             },
             {
                 name: "Velociraptor",
@@ -134,19 +134,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 name: "Stegosaurus",
                 size: "9 m",
                 diet: "Herbivore",
-                img: "assets/images/dino-stegosaurus.jpg"
+                img: "images/dino-stego.webp"
             },
             {
                 name: "Ankylosaurus",
                 size: "6.2 m",
                 diet: "Herbivore",
-                img: "assets/images/dino-ankylosaurus.jpg"
+                img: "images/dino-anky.webp"
             },
             {
                 name: "Gallimimus",
                 size: "6 m",
                 diet: "Omnivore",
-                img: "assets/images/dino-gallimimus.jpg"
+                img: "images/dino-gali.webp"
             },
             {
                 name: "Baryonyx",
@@ -158,19 +158,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 name: "Maiasaura",
                 size: "9 m",
                 diet: "Herbivore",
-                img: "assets/images/dino-maiasaura.jpg"
+                img: "images/dino-maia.webp"
             },
             {
                 name: "Pachycephalosaurus",
                 size: "5 m",
                 diet: "Herbivore",
-                img: "assets/images/dino-pachy.jpg"
+                img: "images/dino-pachy.webp"
             },
             {
                 name: "Oviraptor",
                 size: "1.5 m",
                 diet: "Omnivore",
-                img: "assets/images/dino-oviraptor.jpg"
+                img: "images/dino-ovi.webp"
             }
         ];
       
