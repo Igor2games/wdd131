@@ -260,7 +260,7 @@ header.header {
 
 .cta-btn {
     background: var(--primary-color);
-    color: #fff;
+    color: #000000;
     font-size: 1.1em;
     font-weight: 600;
     padding: 0.3rem;
@@ -326,7 +326,7 @@ header.header {
     padding: 0.8em 1.2em;
     border-radius: 0 5px 5px 0;
     background: var(--secondary-color);
-    color: #014c1f;
+    color: #002d12;
     font-weight: 600;
 }
 
@@ -618,6 +618,10 @@ header.header {
     color: var(--secondary-color);
     text-decoration: underline;
     font-size: 0.97em;
+}
+
+.referencepage {
+    color: white;
 }
 
 @media (max-width: 650px) {
