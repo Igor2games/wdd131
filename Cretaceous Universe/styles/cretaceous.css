@@ -369,6 +369,7 @@ header.header {
 
 .gallery-section h2 {
     margin-top: 0.3em;
+    text-align: center;
 }
 
 .gallery-grid {
@@ -407,7 +408,7 @@ header.header {
 
 .gallery-role {
     font-size: 0.95em;
-    color: var(--secondary-color);
+    color: rgb(136, 110, 38);
 }
 
 @media (max-width: 800px) {
@@ -487,7 +488,7 @@ header.header {
 }
 
 .lightbox-close:focus {
-    outline: 3px solid var(--primary-color);
+    outline: none
 }
 
 .dinosaurs-header {
