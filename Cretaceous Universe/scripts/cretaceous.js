@@ -1,6 +1,5 @@
-// General: Hamburger Menu for Mobile
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Hamburger menu
     const navToggle = document.getElementById('navToggle');
     const mobileMenu = document.getElementById('mobileMenu');
     if (navToggle && mobileMenu) {
@@ -9,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             navToggle.classList.toggle('open', open);
             navToggle.setAttribute('aria-expanded', open);
             mobileMenu.setAttribute('aria-hidden', !open);
-            // Trap focus if menu open
+            
             if (open) {
                 mobileMenu.querySelector('a').focus();
                 document.body.style.overflow = 'hidden';
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 navToggle.focus();
             }
         });
-        // Close on Esc
+      
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
                 mobileMenu.classList.remove('open');
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // ---- Newsletter Signup Form ----
+   
     const newsletterForm = document.getElementById('newsletterForm');
     if (newsletterForm) {
         const feedback = document.getElementById('newsletterFeedback');
@@ -55,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             feedback.style.color = '#338e35';
             feedback.textContent = `You’ve subscribed! Welcome to our newsletter, ${email}.`;
-            // Optionally persist to localStorage as a demonstration
+           
             try {
                 localStorage.setItem('newsletterSignup', JSON.stringify({ email, date: Date.now() }));
             } catch (e) { }
@@ -63,28 +62,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // ---- Lightbox / Modal for Worker Gallery ----
+   
     const workerGallery = document.getElementById('workerGallery');
     const lightboxOverlay = document.getElementById('lightboxOverlay');
     const lightboxImg = document.getElementById('lightboxImg');
     const lightboxCaption = document.getElementById('lightboxCaption');
     const lightboxClose = document.getElementById('lightboxClose');
     if (workerGallery && lightboxOverlay && lightboxImg && lightboxCaption && lightboxClose) {
-        // Open lightbox on click
+       
         workerGallery.addEventListener('click', function (e) {
             const target = e.target.closest('.worker-thumb');
             if (target) {
                 openLightbox(target);
             }
         });
-        // Open with Enter for accessibility
+       
         workerGallery.addEventListener('keydown', function (e) {
             if ((e.key === 'Enter' || e.key === ' ') && e.target.classList.contains('worker-thumb')) {
                 openLightbox(e.target);
             }
         });
         lightboxClose.addEventListener('click', closeLightbox);
-        // Also close on outside click or Escape
+      
         lightboxOverlay.addEventListener('click', function (e) {
             if (e.target === lightboxOverlay) closeLightbox();
         });
@@ -107,17 +106,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // ---- Dinosaurs Dynamic Page ----
+   
     const dinoList = document.getElementById('dinoList');
     const filterBtns = document.querySelectorAll('.filter-btn');
     if (dinoList && filterBtns.length) {
-        // Dinosaur data array
+      
         const dinosaurs = [
             {
                 name: "Tyrannosaurus Rex",
                 size: "12.3 m",
                 diet: "Carnivore",
-                img: "assets/images/dino-trex.jpg"
+                img: "images/dino-trex.webp"
             },
             {
                 name: "Triceratops",
@@ -129,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 name: "Velociraptor",
                 size: "2.1 m",
                 diet: "Carnivore",
-                img: "assets/images/dino-velociraptor.jpg"
+                img: "images/dino-velociraptor.webp"
             },
             {
                 name: "Stegosaurus",
@@ -153,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 name: "Baryonyx",
                 size: "9.5 m",
                 diet: "Carnivore",
-                img: "assets/images/dino-baryonyx.jpg"
+                img: "images/dino-bary.webp"
             },
             {
                 name: "Maiasaura",
@@ -174,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 img: "assets/images/dino-oviraptor.jpg"
             }
         ];
-        // Restore filter from localStorage if present
+      
         let currentFilter = localStorage.getItem('dinoFilter') || "All";
 
         function renderDinosaurs(filter = "All") {
@@ -199,9 +198,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 dinoList.appendChild(card);
             }
         }
-        // Initial render
+      
         renderDinosaurs(currentFilter);
-        // Update filter UI and event handlers
+        
         filterBtns.forEach(btn => {
             btn.setAttribute('aria-pressed', btn.dataset.filter === currentFilter ? 'true' : 'false');
             btn.classList.toggle('active', btn.dataset.filter === currentFilter);
@@ -213,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 btn.classList.add('active');
                 btn.setAttribute('aria-pressed', 'true');
                 renderDinosaurs(btn.dataset.filter);
-                // Persist filter choice in localStorage
+                
                 try {
                     localStorage.setItem('dinoFilter', btn.dataset.filter);
                 } catch (e) { }

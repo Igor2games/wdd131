@@ -549,6 +549,7 @@ header.header {
     min-height: 250px;
     position: relative;
     transition: box-shadow .13s;
+    background-image: url("../images/background.jpg");
 }
 
 .dino-card:focus-within,
@@ -557,12 +558,13 @@ header.header {
 }
 
 .dino-img {
-    height: 120px;
+    height: 360px;
     width: auto;
-    max-width: 220px;
+    max-width: 400px;
     object-fit: contain;
     margin-bottom: 1em;
     border-radius: 0.7em;
+    filter: drop-shadow(12px 24px 12px rgba(0, 0, 0, 1));
 }
 
 .dino-info {
@@ -573,12 +575,19 @@ header.header {
     font-size: 1.28em;
     font-weight: 700;
     margin: 0.2em 0;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    min-width: 200px;
+    min-height: 35px;
 }
 
 .dino-details {
     font-size: 1em;
     color: #2a3937;
     margin: 0.3em 0;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    min-width: 140px;
 }
 
 @media (max-width: 600px) {
