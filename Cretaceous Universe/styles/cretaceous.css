@@ -525,8 +525,8 @@ header.header {
 
 .filter-btn.active,
 .filter-btn:focus {
-    background: var(--primary-color);
-    color: #fff;
+    background: var(--accent-color);
+    color:white;
     outline: 2px solid var(--focus-outline);
 }
 
