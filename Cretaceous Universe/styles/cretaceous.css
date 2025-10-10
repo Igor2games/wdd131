@@ -345,7 +345,6 @@ header.header {
     padding-left: 1em;
 }
 
-/* About Page */
 .about-intro,
 .about-story {
     max-width: 700px;
@@ -370,6 +369,7 @@ header.header {
 .gallery-section h2 {
     margin-top: 0.3em;
     text-align: center;
+    color: rgb(200, 154, 1)
 }
 
 .gallery-grid {
@@ -495,7 +495,7 @@ header.header {
     text-align: center;
     margin-top: 2em;
     padding: 1em 2vw;
-    color: var(--primary-color);
+    color: rgb(255, 191, 0);
 }
 
 .dinosaurs-header h1 {
@@ -551,7 +551,7 @@ header.header {
     min-height: 250px;
     position: relative;
     transition: box-shadow .13s;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background.webp");
 }
 
 .dino-card:focus-within,
